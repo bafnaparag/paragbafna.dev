@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Fundwise</title>
+    <style>
+        /* [COPY THE SAME CSS VARIABLES FROM PRODUCT PAGE] */
+        :root {
+            --primary: #30D158;
+            --secondary: #00C7BE;
+            --dark: #000000;
+            --dark-surface: #1C1C1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #8E8E93;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 50px 20px; }
+        
+        .back-link { color: var(--secondary); text-decoration: none; margin-bottom: 20px; display: inline-block; }
+        h1 { font-size: 42px; margin-bottom: 5px; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .last-updated { color: var(--text-secondary); margin-bottom: 40px; font-size: 14px; }
+        
+        h2 { color: var(--primary); margin-top: 40px; margin-bottom: 15px; font-size: 24px; }
+        p { margin-bottom: 15px; color: #CCCCCC; }
+        ul { margin-bottom: 20px; padding-left: 20px; color: #CCCCCC; }
+        li { margin-bottom: 10px; }
+        
+        .highlight { background: var(--dark-surface); padding: 20px; border-left: 4px solid var(--primary); border-radius: 8px; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to App</a>
+        
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: January 2025</p>
+
+        <div class="highlight">
+            <p><strong>The Short Version:</strong> Fundwise uses a "Zero-Knowledge" architecture. We do not have access to your financial data, your transactions, or your budget. Everything is stored on your device and synchronized via your personal iCloud.</p>
+        </div>
+
+        <h2>Data Collection</h2>
+        <p>Fundwise collects minimal data required to function:</p>
+        <ul>
+            <li><strong>Financial Data:</strong> Stored locally on your device and in your private iCloud Database (CloudKit). We (the developers) cannot access this.</li>
+            <li><strong>Usage Data:</strong> We may collect anonymous, aggregate telemetry (e.g., "App crashed on launch") to fix bugs. This is never linked to your financial data.</li>
+            <li><strong>No Account Required:</strong> You do not create an account with us. We do not have your email address or phone number.</li>
+        </ul>
+
+        <h2>Data Storage & Sync</h2>
+        <p>We use Apple's <strong>CloudKit</strong> for synchronization.</p>
+        <ul>
+            <li>Your data is encrypted by Apple and stored in your private iCloud container.</li>
+            <li>Syncing happens directly between your devices and Apple's servers.</li>
+            <li>We do not operate any servers that process your financial records.</li>
+        </ul>
+
+        <h2>Bank Connections</h2>
+        <p>Fundwise does not connect to bank accounts (Plaid, Yodlee, etc.). This eliminates the risk of banking credential theft and ensures your banking data remains private.</p>
+
+        <h2>Third Parties</h2>
+        <p>We do not sell your data. We do not share your data with advertisers. The app contains no third-party tracking SDKs (like Facebook or Google Analytics).</p>
+
+        <h2>Your Rights</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Export:</strong> You can export all your data to CSV/JSON at any time from Settings.</li>
+            <li><strong>Delete:</strong> You can delete all data from Settings, which removes it from your device and your iCloud container immediately.</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>If you have any questions about this policy, please contact us:</p>
+        <p><a href="mailto:support@paragbafna.dev" style="color: var(--secondary);">support@paragbafna.dev</a></p>
+    </div>
+</body>
+</html>

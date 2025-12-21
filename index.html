@@ -292,7 +292,7 @@
             width: 100px;
             height: 100px;
             margin: 0 auto 20px;
-            background: var(--gradient);
+            background: var(--gradient); /* Fallback for emojis */
             border-radius: 22px;
             display: flex;
             align-items: center;
@@ -300,6 +300,16 @@
             font-size: 48px;
             position: relative;
             z-index: 1;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Added shadow for depth */
+        }
+
+        /* New rule ensures real images fit perfectly over the background */
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 22px;
+            display: block;
         }
 
         .app-card h3 {
@@ -462,6 +472,39 @@
     <section id="apps" class="apps-section">
         <h2 class="section-title">My Apps</h2>
         <div class="apps-grid">
+
+            <!-- Stepwise App -->
+            <div class="app-card">
+                <div class="app-icon">📈</div>
+                <h3>Stepwise</h3>
+                <p>Small steps, big change</p>
+                <!-- App Store Button - Hidden until app is live -->
+                <a href="https://apps.apple.com/app/stepwise-habit-tracker/id6752215442" class="app-store-btn">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                </a>
+                <div class="app-links">
+                    <a href="/apps/stepwise/privacy.html" class="app-link">Privacy</a>
+                    <a href="/apps/stepwise/support.html" class="app-link">Support</a>
+                </div>
+            </div>
+
+            <!-- Fundwise App -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <img src="assets/fundwise-icon.png" alt="Fundwise Icon">
+                </div>
+                <h3>Fundwise</h3>
+                <p>Privacy-First Money Tracker</p>
+                <!-- App Store Button - Hidden until app is live
+                <a href="https://apps.apple.com/app/stepwise-habit-tracker/id6752215442" class="app-store-btn">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                </a>  -->
+                <div class="app-links">
+                    <a href="/apps/fundwise/privacy.html" class="app-link">Privacy</a>
+                    <a href="/apps/fundwise/support.html" class="app-link">Support</a>
+                </div>
+            </div>
+
             <!-- Futoshiki App -->
             <div class="app-card">
                 <div class="app-icon">🔢</div>
@@ -489,21 +532,6 @@
                 <div class="app-links">
                     <a href="/apps/minesweeper/privacy.html" class="app-link">Privacy</a>
                     <a href="/apps/minesweeper/support.html" class="app-link">Support</a>
-                </div>
-            </div>
-
-            <!-- Stepwise App -->
-            <div class="app-card">
-                <div class="app-icon">📈</div>
-                <h3>Stepwise</h3>
-                <p>Small steps, big change</p>
-                <!-- App Store Button - Hidden until app is live -->
-                <a href="https://apps.apple.com/app/stepwise-habit-tracker/id6752215442" class="app-store-btn">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
-                </a>
-                <div class="app-links">
-                    <a href="/apps/stepwise/privacy.html" class="app-link">Privacy</a>
-                    <a href="/apps/stepwise/support.html" class="app-link">Support</a>
                 </div>
             </div>
 
