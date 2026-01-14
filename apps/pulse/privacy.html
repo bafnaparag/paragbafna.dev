@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B8A;
+            --secondary: #FF8FA3;
+            --accent: #FF4D6D;
+            --heart: #FF3366;
+            --dark: #000000;
+            --dark-surface: #1C1C1E;
+            --dark-elevated: #2C2C2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #8E8E93;
+            --gradient: linear-gradient(135deg, #FF6B8A, #FF4D6D, #FF8FA3);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Animated background */
+        .bg-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: var(--dark);
+            overflow: hidden;
+        }
+
+        .gradient-orb {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.25;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .orb1 {
+            background: var(--primary);
+            top: -200px;
+            left: -200px;
+        }
+
+        .orb2 {
+            background: var(--heart);
+            bottom: -200px;
+            right: -200px;
+            animation-delay: 5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--dark-elevated);
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .app-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .intro {
+            background: var(--dark-surface);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid var(--dark-elevated);
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: var(--primary);
+        }
+
+        p, ul {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 107, 138, 0.1), rgba(255, 77, 109, 0.1));
+            border: 1px solid var(--primary);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .privacy-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background: var(--dark-elevated);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 138, 0.5);
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .nav-links {
+                gap: 20px;
+                font-size: 14px;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb1"></div>
+        <div class="gradient-orb orb2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/apps/pulse" class="logo">
+                <div class="app-icon">💕</div>
+                <span class="app-name">Pulse</span>
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/apps/pulse/support.html">Support</a>
+                <a href="/apps/pulse/privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: January 2025</p>
+
+        <div class="intro">
+            <div class="privacy-icon">🔐</div>
+            <p>
+                <strong>Your relationship is private. Your data should be too.</strong> Pulse is built with privacy at its core. 
+                We don't operate servers, we don't collect your data, and we don't have access to your mood updates, notes, or personal information. 
+                Everything stays between you and your partner.
+            </p>
+        </div>
+
+        <h2>The Short Version</h2>
+        
+        <div class="highlight-box">
+            <h3>🚫 What We Don't Do</h3>
+            <ul>
+                <li>We don't collect any personal or relationship data</li>
+                <li>We don't track your usage, moods, or behaviors</li>
+                <li>We don't have user accounts or require email registration</li>
+                <li>We don't store your data on any servers we operate</li>
+                <li>We don't share data with third parties or advertisers</li>
+                <li>We don't use any third-party analytics or tracking SDKs</li>
+                <li>We don't show ads</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <h3>✅ What We Do</h3>
+            <ul>
+                <li>All your data stays on your device and in your private iCloud</li>
+                <li>Partner sharing happens directly through Apple's CloudKit (peer-to-peer)</li>
+                <li>Use only Apple's native frameworks and technologies</li>
+                <li>Respect the intimacy and privacy of your relationship</li>
+            </ul>
+        </div>
+
+        <h2>Detailed Privacy Information</h2>
+
+        <h3>1. Data Storage</h3>
+        <p>
+            All your mood data, notes, and personal information is stored locally on your device using SwiftData, Apple's modern data framework. 
+            We do not operate any servers, databases, or cloud infrastructure. Your data never passes through our systems.
+        </p>
+
+        <h3>2. Partner Sharing (CloudKit)</h3>
+        <p>
+            When you pair with your partner:
+        </p>
+        <ul>
+            <li>Sharing uses Apple's CloudKit with CKShare - a secure, private sharing mechanism</li>
+            <li>Data is shared directly between your iCloud accounts - we have no access</li>
+            <li>All data is encrypted end-to-end by Apple</li>
+            <li>Only you and your invited partner can see shared data</li>
+            <li>Breaking the pair immediately revokes access for both parties</li>
+            <li>Apple's privacy policy governs CloudKit: <a href="https://www.apple.com/privacy/">apple.com/privacy</a></li>
+        </ul>
+
+        <h3>3. Mood & Status Data</h3>
+        <p>
+            Your mood updates, notes, and status information:
+        </p>
+        <ul>
+            <li>Stored locally on your device</li>
+            <li>Shared only with your paired partner (if connected)</li>
+            <li>We cannot see what moods you log or what notes you write</li>
+            <li>Handwritten notes (drawn messages) are stored as images in your iCloud</li>
+            <li>Mood history is available only to you (and shared with premium features)</li>
+        </ul>
+
+        <h3>4. Cycle Tracking (Optional)</h3>
+        <p>
+            If you enable cycle tracking:
+        </p>
+        <ul>
+            <li>Cycle data is stored only on your device and private iCloud</li>
+            <li>Sharing with partner is opt-in and disabled by default</li>
+            <li>Partner sees only "translated insights" (e.g., "Sensitive Phase"), not raw medical data</li>
+            <li>You can disable cycle sharing at any time without breaking the pair</li>
+            <li>We have zero access to any health or cycle information</li>
+        </ul>
+
+        <h3>5. Notifications</h3>
+        <p>
+            If you enable notifications:
+        </p>
+        <ul>
+            <li>Partner update notifications use Apple's Push Notification service via CloudKit</li>
+            <li>We don't operate push notification servers</li>
+            <li>Notification content is processed locally on your device</li>
+            <li>You control all notification settings through iOS Settings</li>
+        </ul>
+
+        <h3>6. Widgets</h3>
+        <p>
+            If you use Pulse widgets:
+        </p>
+        <ul>
+            <li>Widget data is shared between the app and widget using App Groups (local to your device)</li>
+            <li>No widget data is transmitted to external servers</li>
+            <li>Widgets display cached partner data from your local device</li>
+        </ul>
+
+        <h3>7. Premium Features</h3>
+        <p>
+            If you purchase Pulse Pro:
+        </p>
+        <ul>
+            <li>Purchases are handled entirely through Apple's App Store</li>
+            <li>We don't store any payment information</li>
+            <li>Purchase status is stored locally and in your iCloud Keychain</li>
+            <li>Premium features (History, Insights) work with your local data only</li>
+            <li>One subscription can cover both partners through Family Sharing</li>
+        </ul>
+
+        <h3>8. Data Export</h3>
+        <p>
+            You own your data and can export it at any time:
+        </p>
+        <ul>
+            <li>Export your mood history and settings from Settings</li>
+            <li>Data is exported in standard formats for your use</li>
+            <li>Exported data stays on your device unless you choose to share it</li>
+        </ul>
+
+        <h3>9. Data Deletion</h3>
+        <p>
+            You have complete control over your data:
+        </p>
+        <ul>
+            <li>Delete your profile and all mood history from Settings</li>
+            <li>Unpairing removes access to shared data</li>
+            <li>Uninstalling the app removes all local data</li>
+            <li>iCloud data can be managed in iOS Settings → Apple ID → iCloud → Manage Storage</li>
+        </ul>
+
+        <h3>10. Third-Party Services</h3>
+        <p>
+            Pulse uses NO third-party services, analytics, or tracking frameworks. We exclusively use Apple's native frameworks:
+        </p>
+        <ul>
+            <li>SwiftUI for the user interface</li>
+            <li>SwiftData for local data storage</li>
+            <li>CloudKit for optional partner sync and sharing</li>
+            <li>StoreKit 2 for premium purchases</li>
+            <li>UserNotifications for notifications</li>
+            <li>WidgetKit for home screen widgets</li>
+            <li>PencilKit for handwritten notes</li>
+        </ul>
+
+        <h3>11. Children's Privacy</h3>
+        <p>
+            Pulse is designed for adults in relationships. We do not knowingly collect information from children under 17. 
+            Since we don't collect any data, children's privacy is inherently protected if they use the app.
+        </p>
+
+        <h3>12. Changes to This Policy</h3>
+        <p>
+            If we ever update this privacy policy, we will:
+        </p>
+        <ul>
+            <li>Update the "Last updated" date at the top</li>
+            <li>Notify users through an app update description</li>
+            <li>Never compromise on our privacy-first approach</li>
+        </ul>
+
+        <h3>13. Your Rights</h3>
+        <p>
+            Since all data is stored locally on your device and in your private iCloud, you have complete rights over it:
+        </p>
+        <ul>
+            <li><strong>Access:</strong> View all your data directly in the app</li>
+            <li><strong>Modification:</strong> Edit or delete any data at any time</li>
+            <li><strong>Portability:</strong> Export your data in standard formats</li>
+            <li><strong>Deletion:</strong> Remove all data instantly</li>
+            <li><strong>Control:</strong> Manage partner sharing permissions</li>
+        </ul>
+
+        <h3>14. Contact Us</h3>
+        <p>
+            If you have any questions about this privacy policy or how Pulse handles data, please contact us:
+        </p>
+        <ul>
+            <li>Email: <a href="mailto:support@paragbafna.dev?subject=Pulse%20Privacy%20Question">support@paragbafna.dev</a></li>
+            <li>Website: <a href="https://paragbafna.dev">paragbafna.dev</a></li>
+        </ul>
+
+        <div class="contact-section">
+            <h2>Questions or Concerns?</h2>
+            <p>We're here to help and always happy to clarify our privacy practices.</p>
+            <a href="mailto:support@paragbafna.dev?subject=Pulse%20Privacy%20Question" class="contact-button">Contact Support</a>
+        </div>
+    </div>
+</body>
+</html>
