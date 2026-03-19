@@ -290,7 +290,7 @@
     <!-- Content -->
     <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: January 2025</p>
+        <p class="last-updated">Last updated: March 2026</p>
 
         <div class="intro">
             <div class="privacy-icon">🔐</div>
@@ -321,6 +321,8 @@
             <ul>
                 <li>All your data stays on your device</li>
                 <li>Optional iCloud sync (controlled entirely by you through Apple)</li>
+                <li>Optionally read Apple Health data to auto-complete habits — data never leaves your device</li>
+                <li>Sync habits to Apple Watch locally — no internet required</li>
                 <li>Use only Apple's native frameworks and technologies</li>
                 <li>Respect your privacy completely</li>
             </ul>
@@ -378,7 +380,35 @@
             <li>Apple's privacy policy applies to all App Store transactions</li>
         </ul>
 
-        <h3>6. Data You Can Export</h3>
+        <h3>6. Apple Health Integration (Optional)</h3>
+        <p>
+            Stepwise can optionally connect to Apple Health to automatically track habit completion based on your health data.
+            This feature is entirely opt-in and requires your explicit permission.
+        </p>
+        <ul>
+            <li><strong>What we read:</strong> Steps, sleep duration, exercise minutes, active energy burned, mindfulness minutes, and water intake</li>
+            <li><strong>Purpose:</strong> To automatically complete habits when you reach your daily goal — for example, marking your "10,000 steps" habit as done when Apple Health records that you've hit the target</li>
+            <li><strong>What we never do:</strong> We never write to Apple Health, never modify your health records, and never transmit any health data to any server</li>
+            <li><strong>Where data stays:</strong> Health data is read locally on your device and never leaves it. It is not included in our iCloud sync</li>
+            <li><strong>Your control:</strong> You can revoke Health access at any time via iOS Settings → Privacy &amp; Security → Health → Stepwise</li>
+        </ul>
+        <p>
+            Apple Health data is governed by Apple's privacy policy. We only access the specific data types you permit,
+            and only for the purpose of habit completion tracking.
+        </p>
+
+        <h3>7. Apple Watch</h3>
+        <p>
+            If you have an Apple Watch, Stepwise can display your habits and allow completions directly from your wrist.
+        </p>
+        <ul>
+            <li>Habit data is synced between your iPhone and Apple Watch using WatchConnectivity, Apple's framework for watch-phone communication</li>
+            <li>This sync happens locally over Bluetooth/Wi-Fi between your devices — no internet or external servers are involved</li>
+            <li>Watch face complications show your daily habit progress using data stored locally on the watch</li>
+            <li>No additional data is collected or transmitted as a result of using the Apple Watch app</li>
+        </ul>
+
+        <h3>8. Data You Can Export</h3>
         <p>
             You own your data and can export it at any time:
         </p>
@@ -388,7 +418,7 @@
             <li>Exported data stays on your device unless you choose to share it</li>
         </ul>
 
-        <h3>7. Data Deletion</h3>
+        <h3>9. Data Deletion</h3>
         <p>
             You have complete control over your data:
         </p>
@@ -399,13 +429,13 @@
             <li>If using iCloud, you can manage that data in iOS Settings → Apple ID → iCloud → Manage Storage</li>
         </ul>
 
-        <h3>8. Children's Privacy</h3>
+        <h3>10. Children's Privacy</h3>
         <p>
             Stepwise is suitable for users of all ages. Since we don't collect any data, children's privacy is inherently protected. 
             Parents can feel confident that their children's habit tracking remains completely private.
         </p>
 
-        <h3>9. Third-Party Services</h3>
+        <h3>11. Third-Party Services</h3>
         <p>
             Stepwise uses NO third-party services, analytics, or tracking frameworks. We exclusively use Apple's native frameworks:
         </p>
@@ -415,10 +445,12 @@
             <li>CloudKit for optional iCloud sync</li>
             <li>StoreKit for premium purchases</li>
             <li>UserNotifications for local notifications</li>
-            <li>WidgetKit for home screen widgets</li>
+            <li>WidgetKit for home screen widgets and Apple Watch complications</li>
+            <li>HealthKit for optional health data reading (never writing)</li>
+            <li>WatchConnectivity for Apple Watch sync</li>
         </ul>
 
-        <h3>10. Changes to This Policy</h3>
+        <h3>12. Changes to This Policy</h3>
         <p>
             If we ever update this privacy policy, we will:
         </p>
@@ -428,7 +460,7 @@
             <li>Never compromise on our privacy-first approach</li>
         </ul>
 
-        <h3>11. Your Rights</h3>
+        <h3>13. Your Rights</h3>
         <p>
             Since all data is stored locally on your device, you have complete rights over it:
         </p>
@@ -439,7 +471,7 @@
             <li>Deletion: Remove all data instantly</li>
         </ul>
 
-        <h3>12. Contact Us</h3>
+        <h3>14. Contact Us</h3>
         <p>
             If you have any questions about this privacy policy or how Stepwise handles data, please contact us:
         </p>
