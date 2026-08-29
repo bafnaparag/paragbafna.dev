@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parag Bafna - iOS/macOS Developer</title>
+    <meta name="description" content="Parag Bafna builds privacy-first iOS apps — no third-party trackers, just Apple's native frameworks. Explore Stepwise, DeskMove, Fundwise, Wake, Aura, and more.">
+    <meta property="og:title" content="Parag Bafna - iOS/macOS Developer">
+    <meta property="og:description" content="Privacy-first iOS apps built with Apple's native frameworks — no third-party trackers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paragbafna.dev/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Parag Bafna - iOS/macOS Developer">
+    <meta name="twitter:description" content="Privacy-first iOS apps built with Apple's native frameworks — no third-party trackers.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <style>
         * {
             margin: 0;
@@ -235,6 +244,55 @@
             box-shadow: 0 10px 30px rgba(0, 122, 255, 0.5);
         }
 
+        /* Privacy Section */
+        .privacy-section {
+            padding: 80px 50px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .privacy-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-section > p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .privacy-badges {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .privacy-badge {
+            background: var(--dark-surface);
+            border-radius: 16px;
+            padding: 25px 30px;
+            max-width: 220px;
+        }
+
+        .privacy-badge .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .privacy-badge h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .privacy-badge p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
         /* Apps Section */
         .apps-section {
             padding: 100px 50px;
@@ -453,6 +511,7 @@
             <div class="logo">PB</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#privacy">Privacy</a></li>
                 <li><a href="#apps">Apps</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -468,6 +527,29 @@
         </div>
     </section>
 
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy-section">
+        <h2>Privacy by Design</h2>
+        <p>Every app here is built without third-party analytics, ad networks, or trackers — just Apple's native frameworks, so your data stays on your device or your own private iCloud account, never on a server we operate.</p>
+        <div class="privacy-badges">
+            <div class="privacy-badge">
+                <div class="icon" role="img" aria-label="No entry sign">🚫</div>
+                <h4>No Trackers</h4>
+                <p>Zero third-party analytics or advertising SDKs</p>
+            </div>
+            <div class="privacy-badge">
+                <div class="icon" role="img" aria-label="Mobile phone">📱</div>
+                <h4>On-Device</h4>
+                <p>Built with Apple's SwiftData, HealthKit, and StoreKit</p>
+            </div>
+            <div class="privacy-badge">
+                <div class="icon" role="img" aria-label="Locked padlock">🔒</div>
+                <h4>No Servers, No Access</h4>
+                <p>Data lives on your device or your own private iCloud — we can't see it, ever</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Apps Section -->
     <section id="apps" class="apps-section">
         <h2 class="section-title">My Apps</h2>
@@ -476,7 +558,7 @@
             <!-- Stepwise App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/stepwise-icon.png" alt="Stepwise Icon">
+                    <img src="assets/stepwise-icon.png" alt="Stepwise Icon" loading="lazy">
                 </div>
                 <h3>Stepwise</h3>
                 <p>Small steps, big change</p>
@@ -493,7 +575,7 @@
             <!-- DeskMove App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/deskmove-icon.png" alt="DeskMove Icon">
+                    <img src="assets/deskmove-icon.png" alt="DeskMove Icon" loading="lazy">
                 </div>
                 <h3>DeskMove</h3>
                 <p>Stop the sedentary cycle. DeskMove uses on-device sensors to turn your work breaks into mini-missions.</p>
@@ -509,7 +591,7 @@
             <!-- Fundwise App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/fundwise-icon.png" alt="Fundwise Icon">
+                    <img src="assets/fundwise-icon.png" alt="Fundwise Icon" loading="lazy">
                 </div>
                 <h3>Fundwise</h3>
                 <p>Privacy-First Money Tracker</p>
@@ -525,7 +607,7 @@
             <!-- Wake App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/wake-icon.png" alt="Wake Icon">
+                    <img src="assets/wake-icon.png" alt="Wake Icon" loading="lazy">
                 </div>
                 <h3>Wake</h3>
                 <p>The alarm that actually wakes you up — with missions you can't ignore</p>
@@ -538,10 +620,26 @@
                 </div>
             </div>
 
+            <!-- Aura App -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <img src="assets/aura-icon.png" alt="Aura Icon" loading="lazy">
+                </div>
+                <h3>Aura</h3>
+                <p>Your cycle, your data, your device</p>
+                <a href="https://apps.apple.com/in/app/period-tracker-aura/id6772481381" class="app-store-btn">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                </a>
+                <div class="app-links">
+                    <a href="/apps/aura/privacy.html" class="app-link">Privacy</a>
+                    <a href="/apps/aura/support.html" class="app-link">Support</a>
+                </div>
+            </div>
+
             <!-- Futoshiki App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/futoshiki-icon.png" alt="Futoshiki Icon">
+                    <img src="assets/futoshiki-icon.png" alt="Futoshiki Icon" loading="lazy">
                 </div>
                 <h3>Futoshiki</h3>
                 <p>A challenging logic puzzle game that tests your reasoning skills</p>
@@ -558,7 +656,7 @@
             <!-- Minesweeper App -->
             <div class="app-card">
                 <div class="app-icon">
-                    <img src="assets/minesweeper-icon.png" alt="Minesweeper Icon">
+                    <img src="assets/minesweeper-icon.png" alt="Minesweeper Icon" loading="lazy">
                 </div>
                 <h3>Minesweeper</h3>
                 <p>Classic mine-detecting puzzle game reimagined for iOS</p>
@@ -574,8 +672,9 @@
 
             <!-- Pulse App -->
             <div class="app-card">
+                <span class="coming-soon">Coming Soon</span>
                 <div class="app-icon">
-                    <img src="assets/pulse-icon.png" alt="Pulse Icon">
+                    <img src="assets/pulse-icon.png" alt="Pulse Icon" loading="lazy">
                 </div>
                 <h3>Pulse</h3>
                 <p>Stay connected with your partner through shared mood updates</p>
@@ -592,7 +691,7 @@
             <!-- Future App Placeholder -->
             <div class="app-card" style="opacity: 0.5;">
                 <span class="coming-soon">Coming Soon</span>
-                <div class="app-icon">🚀</div>
+                <div class="app-icon" role="img" aria-label="Rocket emoji">🚀</div>
                 <h3>More Coming</h3>
                 <p>Stay tuned for more exciting apps!</p>
             </div>
@@ -606,10 +705,13 @@
             <a href="https://github.com/yourusername">🐙</a>
             <a href="https://twitter.com/yourusername">🐦</a>
         </div>
-        <p>&copy; 2025 Parag Bafna. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Parag Bafna. All rights reserved.</p>
     </footer>
 
     <script>
+        // Footer copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
