@@ -1,0 +1,20 @@
+# Parag Bafna
+
+> iOS/macOS developer building privacy-first apps using Apple's native frameworks — no third-party trackers or analytics SDKs.
+
+Parag Bafna is an independent iOS developer focused on privacy-by-design apps. All apps store data on-device using Apple's native frameworks (SwiftData, HealthKit, StoreKit) instead of third-party cloud services or analytics/advertising SDKs.
+
+## Apps
+
+- [Stepwise](https://apps.apple.com/app/stepwise-habit-tracker/id6752215442): Habit tracker — small steps, big change.
+- [DeskMove](https://apps.apple.com/app/deskmove-break-timer-streak/id6768591036): Break timer that uses on-device sensors to turn work breaks into mini-missions.
+- [Fundwise](https://apps.apple.com/app/fundwise-budget-expense/id6756845062): Privacy-first budget and expense tracker.
+- [Wake](https://apps.apple.com/app/loud-alarm-missions-wake/id6766859297): Alarm app with missions you can't ignore.
+- [Aura](https://apps.apple.com/in/app/period-tracker-aura/id6772481381): Period tracker — your cycle, your data, your device.
+- [Futoshiki](https://apps.apple.com/app/id6748694315): Logic puzzle game.
+- [Minesweeper](https://apps.apple.com/app/id6748701958): Classic mine-detecting puzzle game reimagined for iOS.
+- [Pulse](https://paragbafna.dev/apps/pulse/): Shared mood updates for couples (coming soon).
+
+## Contact
+
+- Support: support@paragbafna.dev
